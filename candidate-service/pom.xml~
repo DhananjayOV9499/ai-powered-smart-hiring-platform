@@ -91,20 +91,6 @@
 
 
 
-		<!-- Hibernate Validator for @URL and other bean validations -->
-		<dependency>
-			<groupId>org.hibernate.validator</groupId>
-			<artifactId>hibernate-validator</artifactId>
-		</dependency>
-
-		<!-- Jakarta Validation API (already provided by Spring Boot but safe to include explicitly) -->
-		<dependency>
-			<groupId>jakarta.validation</groupId>
-			<artifactId>jakarta.validation-api</artifactId>
-		</dependency>
-
-
-
 
 		<!-- Testing -->
 		<dependency>
