@@ -1,0 +1,24 @@
+spring.application.name=interview-service
+# === Application Info ===
+
+server.port=8081
+
+# === PostgreSQL Configuration ===
+spring.datasource.url=jdbc:postgresql://localhost:5432/interview_db
+spring.datasource.username=postgres
+spring.datasource.password=your_password
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+
+# Automatically create/update schema
+spring.jpa.hibernate.ddl-auto=update
+
+# === Logging ===
+logging.level.org.hibernate.SQL=DEBUG
+logging.level.org.hibernate.type.descriptor.sql.BasicBinder=TRACE
+
+# === Swagger / OpenAPI ===
+springdoc.api-docs.enabled=true
+springdoc.swagger-ui.enabled=true
+springdoc.swagger-ui.path=/swagger-ui.html
+
