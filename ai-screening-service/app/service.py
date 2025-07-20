@@ -16,15 +16,12 @@ class ResumeAnalyzer:
         load_dotenv(dotenv_path=env_path)
 
         self.api_key = os.getenv("OPENAI_API_KEY")
-        self.org_id = os.getenv("OPENAI_ORG_ID")
-
         if not self.api_key:
             raise ValueError("OpenAI API key not configured")
         
         # Initialize OpenAI client
         self.client = OpenAI(
             api_key=self.api_key,
-            organization=self.org_id,
             timeout=30  # Global timeout
         )
 
